@@ -205,9 +205,10 @@ UseLocalConfig = yes
 <?=$error_handler;?>
 
 <?php
-
 if ($webcache !== 'none') {
+?>
 
+<?php
 if ($reverseproxy) {
 ?>
 
@@ -227,8 +228,10 @@ UseToolkit = block_shellshock, block_httpoxy, findindexfile, permalink
 <?php
 }
 ?>
+<?php
 } else {
-
+?>
+<?php
 if ($reverseproxy) {
 ?>
 
@@ -248,7 +251,9 @@ UseToolkit = block_shellshock, block_httpoxy, findindexfile, permalink
 <?php
 }
 ?>
+<?php
 }
+?>
 #StartFile = index.php
 
 
